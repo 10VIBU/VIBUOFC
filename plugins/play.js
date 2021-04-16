@@ -1,7 +1,7 @@
 let limit = 30
 let yts = require('yt-search')
 let fetch = require('node-fetch')
-const { servers, yta, ytv } = require('../lib/y2mate')
+const { servers, yta, ytv } = require('../lib/y2mate.biz')
 let handler = async (m, { conn, command, text, isPrems, isOwner }) => {
   if (!text) throw 'Que estas buscando ?'
   let results = await yts(text)
